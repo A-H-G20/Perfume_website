@@ -1,0 +1,195 @@
+   /* General reset for padding and margin */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header styling */
+h1,h3 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Table container */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header styling */
+thead {
+    background-color: #333;
+    color: white;
+    text-align: left;
+}
+
+/* Table header cells */
+th {
+    padding: 12px 15px;
+    font-size: 16px;
+}
+
+/* Table row styling */
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table data cells */
+td {
+    padding: 12px ;
+    
+    font-size: 14px;
+    color: white;
+}
+
+/* Product image styling */
+td img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+/* Total cell styling */
+td:nth-child(4), td:nth-child(5) {
+    font-weight: bold;
+}
+
+/* Responsive table styling */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    td img {
+        width: 80px;
+    }
+}
+
+/* Styling for the Update Quantity button */
+button[type="submit"][name="update"] {
+    background-color: #4CAF50;  /* Green background */
+    color: white;  /* White text */
+    padding: 12px 24px;  /* Padding for button size */
+    font-size: 16px;  /* Text size */
+    border: none;  /* Remove default border */
+    border-radius: 8px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* Smooth transitions */
+}
+
+/* Hover effect for the button */
+button[type="submit"][name="update"]:hover {
+    background-color: #45a049;  /* Darker green on hover */
+    transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+/* Focus effect for better accessibility */
+button[type="submit"][name="update"]:focus {
+    outline: none;  /* Remove the default focus outline */
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.6);  /* Green shadow for focus */
+}
+
+/* Active state (when clicked) */
+button[type="submit"][name="update"]:active {
+    background-color: #3e8e41;  /* Even darker green when pressed */
+    transform: scale(1);  /* Reset zoom effect */
+}
+
+/* Styling for the Delete link */
+a[href^="cart.php?delete="] {
+    color: white;  /* White text */
+    background-color: #f44336;  /* Red background color for delete */
+    padding: 8px 16px;  /* Padding for the link */
+    text-decoration: none;  /* Remove default underline */
+    font-size: 16px;  /* Text size */
+    border-radius: 5px;  /* Rounded corners */
+    display: inline-block;  /* Make it behave like a button */
+    cursor: pointer;  /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* Smooth transitions */
+}
+
+/* Hover effect for the Delete link */
+a[href^="cart.php?delete="]:hover {
+    background-color: #e53935;  /* Darker red on hover */
+    transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+/* Focus effect for better accessibility */
+a[href^="cart.php?delete="]:focus {
+    outline: none;  /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(244, 67, 54, 0.6);  /* Red shadow for focus */
+}
+
+/* Active state (when clicked) */
+a[href^="cart.php?delete="]:active {
+    background-color: #d32f2f;  /* Even darker red when pressed */
+    transform: scale(1);  /* Reset zoom effect */
+}
+/* Styling for the Proceed to Checkout button */
+a[href="checkout.php"] button {
+    background-color: black;  /* Blue background */
+    color: white;  /* White text */
+    padding: 14px 30px;  /* Padding for larger button */
+    font-size: 18px;  /* Text size */
+    border: none;  /* Remove default border */
+    border-radius: 8px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor on hover */
+    text-decoration: none;  /* Remove underline from link */
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* Smooth transitions */
+    display: inline-block;  /* Make the button behave like a link */
+    text-align: center;  /* Center the text inside the button */
+    border-color: yellow;
+}
+
+/* Hover effect for the button */
+a[href="checkout.php"] button:hover {
+    background-color: black;  /* Darker blue on hover */
+    transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+/* Focus effect for better accessibility */
+a[href="checkout.php"] button:focus {
+    outline: none;  /* Remove the default focus outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);  /* Blue shadow for focus */
+}
+
+/* Active state (when clicked) */
+a[href="checkout.php"] button:active {
+    background-color: #004085;  /* Even darker blue when pressed */
+    transform: scale(1);  /* Reset zoom effect */
+}
+/* Styling for the quantity input field */
+input[type="number"][name="quantity"] {
+    width: 80px;  /* Set width for consistency */
+    padding: 10px;  /* Padding inside the input field */
+    font-size: 16px;  /* Text size inside the input */
+   /* Light gray border */
+    border-radius: 5px;  /* Rounded corners */
+  
+    color: #333;  /* Text color */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;  /* Smooth transition */
+    text-align: center;  /* Center align the number */
+    display: inline-block;  /* Make it behave like an inline element */
+    outline: none;  /* Remove the default outline */
+}

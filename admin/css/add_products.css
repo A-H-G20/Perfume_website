@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+ 
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Header Navigation */
+header ul {
+    list-style: none;
+    background: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+header ul li a:hover {
+   
+    transform: scale(1.1);
+}
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+form h1 {
+    text-align: center;
+    color: #2575fc;
+    margin-bottom: 20px;
+}
+
+/* Form Inputs */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+/* File Input Styling */
+form input[type="file"] {
+    padding: 5px;
+    border: none;
+}
+
+/* Submit Button */
+form button {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+    }
+
+    form {
+        width: 90%;
+    }
+}
